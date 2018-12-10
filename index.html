@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<title>larissinha</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-pink">
+    <h1 class="w3-xxxlarge"><b>Larissa Azevedo</b></h1>
+    <h6>Bem-vindos ao site <span class="w3-tag">lari's world</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/t.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-pink">2.3</h1>
+      <h1 class="w3-jumbo w3-text-pink w3-hide-small"><b>Feliz anivesário</b></h1>
+      <h6><button class="w3-button w3-red w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Meu amor</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Parabéns</h3>
+          <h5>Te amo, <span class="w3-opacity">dec 10, 2018</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/ee.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong>Oi melhor pessoa do mundo!</strong> Eu queria dizer que você é uma das pessoas mais legais já conheci.Obrigada por existir.Você merece todas as coisas boas do mundo.Obrigada por manter nossa amizade mesmo eu sendo uma péssima amiga hahah.
+            Enfim,Parabéns para você,
+Pessoa super-especial
+Que todos os dias
+Encanta minha vida
+E a faz vibrar de alegria!
+
+Muitas felicidades 
+Para hoje e para sempre!
+Que nunca lhe falte 
+Amor, saúde e paz,
+E sua essência tão única
+Nunca deixe de brilhar.</p>
+          <p>TE AMO TE AMO TE AMO </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium"></span></h4>
+                <p></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Princesaaaa</h3>
+          <h5>;3, <span class="w3-opacity">Dec 10, 2018</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/KKK.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong>Chuchu!</strong> Melhor amiga do mundo!</p>
+          <p>Espero que hoje você esteja de bom humor,esteja fértil.
+          .</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium"></span></h4>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium"></span></h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>A modela</h3>
+          <h5>Diva, <span class="w3-opacity">Dec 10, 2018</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/xx.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Me ame!</strong> Sempre vou colocar esse poeama da amizade!</p>
+          <p>Pode ser que um dia deixemos de nos falar... </p>
+<p>Mas, enquanto houver amizade, 
+Faremos as pazes de novo.</p> 
+
+<p>Pode ser que um dia o tempo passe... 
+Mas, se a amizade permanecer, 
+Um de outro se há-de lembrar.</p> 
+
+<p>Pode ser que um dia nos afastemos... 
+Mas, se formos amigos de verdade, 
+A amizade nos reaproximará. </p>
+
+<p>Pode ser que um dia não mais existamos... 
+Mas, se ainda sobrar amizade, 
+Nasceremos de novo, um para o outro. </p>
+
+<p>Pode ser que um dia tudo acabe... 
+Mas, com a amizade construiremos tudo novamente, 
+Cada vez de forma diferente. 
+Sendo único e inesquecível cada momento 
+Que juntos viveremos e nos lembraremos para sempre</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4> <span class="w3-opacity w3-medium"></span></h4>
+                <p></p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/boy.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium"></span></h4>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_hood.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4><span class="w3-opacity w3-medium"></span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-pink">
+          <h4>Sobre larissinha</h4>
+          <p>Ela é pequena e gosta de viver grandes aventuras,sempre esta disposta pra fazer qualquer coisa e chora quando está apaixonada....</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-pink">
+          <h4></h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-light-pink">
+          <li class="w3-padding-16">
+            <img src="img/o.jpg" style="width:90px">
+            <span class="w3-large"></span>
+            <br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16">
+<img src="img/u.jpg" style="width:90px">            <span class="w3-large"></span>
+            <br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16">
+		  <img src="img/v.jpg" style="width:90px">
+            <span class="w3-large"></span>
+            <br>
+            <span></span>
+          </li>
+          <li class="w3-padding-16">
+		  <img src="img/dd.jpg" style="width:90px">
+            <span class="w3-large"></span>
+            <br>
+            <span></span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+ 
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
